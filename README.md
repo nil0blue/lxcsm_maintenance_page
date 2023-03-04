@@ -24,7 +24,7 @@ The liferay.conf nginx configuration was modified to look for the existence of t
 
 An error.conf file is supplied which serves the `under_maintenance.html` file in case of a 503 error.
 
-A `maintenance.html` file is supplied in the public folder, which is copied to /var/www/html on startup.
+A `maintenance.html` file is supplied in the public folder, which is copied to `/var/www/html` on startup.
 
 
 A startup script is supplied which checks the MAINTENANCE_MODE environment variable and if set to 1, renames the `maintenance.html` file to `under_maintenance.html`, thus triggering the condition to return a 503 in the liferay.conf. 
