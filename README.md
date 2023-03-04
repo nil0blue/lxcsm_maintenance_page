@@ -10,7 +10,8 @@ Build and deploy the changes.
 
 Verify the webserver logs, and look for `Running /etc/nginx/scripts/nginxonstart.sh`
 
-When your site needs to enter maintenance mode, go to the Webserver **Environment Variables** page and add the **MAINTENANCE_MODE** environment variable with a value of **1**
+When your site needs to enter maintenance mode, go to the Webserver **Environment Variables** page and add the **MAINTENANCE_MODE** environment variable with a value of **1**.
+
 Save the change. This will restart the webserver container and the maintenance page will be served when accessing the webserver URL. 
 
 Note: there will be a very small downtime when this happens, but it will not be noticeable with Rolling Updates.
