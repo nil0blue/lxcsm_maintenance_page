@@ -39,4 +39,4 @@ This code has been tested in a LXC SM Project with stack version 5.x
 
 If you are going to restore a backup during the maintenance window, make sure the **LCP_BACKUP_RESTORE_STRATEGY** is set to **PREPARE_AND_SWAP**
 
-If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+
