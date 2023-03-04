@@ -5,7 +5,7 @@ This repo provides the basic framework for displaying a maintenance page in Life
 ## How to Deploy
 
 To deploy the maintenance page, you will need a LXC SM workspace.
-Copy the contents of the **common** folder to the **webserver/configs/{env}** folder in your workspace.
+Copy the contents of the `common` folder to the `webserver/configs/{env}` folder in your workspace.
 Build and deploy the changes.
 
 Verify the webserver logs, and look for `Running /etc/nginx/scripts/nginxonstart.sh`
