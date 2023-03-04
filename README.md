@@ -27,7 +27,7 @@ An error.conf file is supplied which serves the `under_maintenance.html` file in
 A `maintenance.html` file is supplied in the public folder, which is copied to `/var/www/html` on startup.
 
 
-A startup script is supplied which checks the MAINTENANCE_MODE environment variable and if set to 1, renames the `maintenance.html` file to `under_maintenance.html`, thus triggering the condition to return a 503 in the liferay.conf. 
+A startup script is supplied which checks the **MAINTENANCE_MODE** environment variable and if set to 1, renames the `maintenance.html` file to `under_maintenance.html`, thus triggering the condition to return a 503 in the liferay.conf. 
 
 The startup script is necessary because users do not have privileges to create/move files within the webserver container. 
 
