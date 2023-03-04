@@ -16,6 +16,8 @@ Save the change. This will restart the webserver container and the maintenance p
 
 Note: there will be a very small downtime when this happens, but it will not be noticeable with Rolling Updates.
 
+After you've completed your maintenance activities such as upgrading Liferay, change the **MAINTENANCE_MODE** environment variable to 0 or delete it. The webserver will be restarted and should start serving the backend Liferay content.
+
 ## How it Works
 
 The liferay.conf nginx configuration was modified to look for the existence of the `under_maintenance.html` file and return a `503` error. In the absence of the file, the default directives are processed, forwarding the request to the backend.
